@@ -3,9 +3,9 @@ terraform {
 
   backend "s3" {
     region         = "us-east-1"
-    dynamodb_table = "prdinf-terraform-lock-table"
+    dynamodb_table = "psc-terraform-lock-table"
     encrypt        = "true"
-    bucket         = "cb-prod-infra-terraform"
+    bucket         = "psc-terraform-dev"
     key            = "cb-prod-infra/alarouco-test/us-east-2.tfstate"
   }
 }
